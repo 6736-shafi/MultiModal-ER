@@ -1,0 +1,87 @@
+{
+  "model": "Fusion (Speech BiLSTM + Text BiLSTM)",
+  "accuracy": 0.9976190476190476,
+  "per_class_metrics": {
+    "Angry": {
+      "accuracy": 1.0,
+      "support": 120
+    },
+    "Disgust": {
+      "accuracy": 0.9833333333333333,
+      "support": 120
+    },
+    "Fear": {
+      "accuracy": 1.0,
+      "support": 120
+    },
+    "Happy": {
+      "accuracy": 1.0,
+      "support": 120
+    },
+    "Neutral": {
+      "accuracy": 1.0,
+      "support": 120
+    },
+    "Pleasant Surprise": {
+      "accuracy": 1.0,
+      "support": 120
+    },
+    "Sad": {
+      "accuracy": 1.0,
+      "support": 120
+    }
+  },
+  "error_analysis": [
+    {
+      "file": "OAF_mode_disgust.wav",
+      "text": "Say the word mode.",
+      "true_emotion": "Disgust",
+      "predicted_emotion": "Sad",
+      "confidence": 0.8547250032424927
+    },
+    {
+      "file": "OAF_mode_disgust.wav",
+      "text": "Say the word mode.",
+      "true_emotion": "Disgust",
+      "predicted_emotion": "Sad",
+      "confidence": 0.8547250032424927
+    }
+  ],
+  "low_confidence_correct": [
+    {
+      "identifier": "../../TESS Toronto emotional speech set data/TESS Toronto emotional speech set data/TESS Toronto emotional speech set data/OAF_Pleasant_surprise/OAF_bath_ps.wav",
+      "true_emotion": "Pleasant Surprise",
+      "confidence": 0.9968851208686829,
+      "runner_up": "Happy",
+      "runner_up_confidence": 0.002948498586192727
+    },
+    {
+      "identifier": "../../TESS Toronto emotional speech set data/TESS Toronto emotional speech set data/YAF_disgust/YAF_love_disgust.wav",
+      "true_emotion": "Disgust",
+      "confidence": 0.9979939460754395,
+      "runner_up": "Pleasant Surprise",
+      "runner_up_confidence": 0.0018409175099804997
+    },
+    {
+      "identifier": "../../TESS Toronto emotional speech set data/TESS Toronto emotional speech set data/TESS Toronto emotional speech set data/YAF_neutral/YAF_lean_neutral.wav",
+      "true_emotion": "Neutral",
+      "confidence": 0.9984850287437439,
+      "runner_up": "Sad",
+      "runner_up_confidence": 0.0014245299389585853
+    },
+    {
+      "identifier": "../../TESS Toronto emotional speech set data/TESS Toronto emotional speech set data/YAF_neutral/YAF_lean_neutral.wav",
+      "true_emotion": "Neutral",
+      "confidence": 0.9984850287437439,
+      "runner_up": "Sad",
+      "runner_up_confidence": 0.0014245299389585853
+    },
+    {
+      "identifier": "../../TESS Toronto emotional speech set data/TESS Toronto emotional speech set data/OAF_happy/OAF_chain_happy.wav",
+      "true_emotion": "Happy",
+      "confidence": 0.9990299940109253,
+      "runner_up": "Pleasant Surprise",
+      "runner_up_confidence": 0.000908848422113806
+    }
+  ]
+}

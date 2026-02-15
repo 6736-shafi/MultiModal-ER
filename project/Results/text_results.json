@@ -1,0 +1,103 @@
+{
+  "model": "Text (BiLSTM)",
+  "accuracy": 0.15,
+  "per_class_metrics": {
+    "Angry": {
+      "accuracy": 0.0,
+      "support": 120
+    },
+    "Disgust": {
+      "accuracy": 0.0,
+      "support": 120
+    },
+    "Fear": {
+      "accuracy": 0.0,
+      "support": 120
+    },
+    "Happy": {
+      "accuracy": 0.05,
+      "support": 120
+    },
+    "Neutral": {
+      "accuracy": 0.0,
+      "support": 120
+    },
+    "Pleasant Surprise": {
+      "accuracy": 1.0,
+      "support": 120
+    },
+    "Sad": {
+      "accuracy": 0.0,
+      "support": 120
+    }
+  },
+  "error_analysis": [
+    {
+      "text": "Stay the word road!",
+      "true_emotion": "Fear",
+      "predicted_emotion": "Happy",
+      "confidence": 0.14631837606430054
+    },
+    {
+      "text": "Say the words shout.",
+      "true_emotion": "Neutral",
+      "predicted_emotion": "Happy",
+      "confidence": 0.14373421669006348
+    },
+    {
+      "text": "Say the words shout.",
+      "true_emotion": "Angry",
+      "predicted_emotion": "Happy",
+      "confidence": 0.14373421669006348
+    },
+    {
+      "text": "Say the words, Saur.",
+      "true_emotion": "Neutral",
+      "predicted_emotion": "Happy",
+      "confidence": 0.14372371137142181
+    },
+    {
+      "text": "Say the words sub.",
+      "true_emotion": "Angry",
+      "predicted_emotion": "Pleasant Surprise",
+      "confidence": 0.14356325566768646
+    }
+  ],
+  "low_confidence_correct": [
+    {
+      "identifier": "Say the word get!",
+      "true_emotion": "Pleasant Surprise",
+      "confidence": 0.1434561312198639,
+      "runner_up": "Angry",
+      "runner_up_confidence": 0.14313620328903198
+    },
+    {
+      "identifier": "Say the word mouse!",
+      "true_emotion": "Pleasant Surprise",
+      "confidence": 0.14346107840538025,
+      "runner_up": "Angry",
+      "runner_up_confidence": 0.14312885701656342
+    },
+    {
+      "identifier": "Say the word mouse!",
+      "true_emotion": "Pleasant Surprise",
+      "confidence": 0.14346107840538025,
+      "runner_up": "Angry",
+      "runner_up_confidence": 0.14312885701656342
+    },
+    {
+      "identifier": "Say the word jar.",
+      "true_emotion": "Pleasant Surprise",
+      "confidence": 0.1434611976146698,
+      "runner_up": "Angry",
+      "runner_up_confidence": 0.14312872290611267
+    },
+    {
+      "identifier": "Say the word death.",
+      "true_emotion": "Pleasant Surprise",
+      "confidence": 0.14346247911453247,
+      "runner_up": "Angry",
+      "runner_up_confidence": 0.14312683045864105
+    }
+  ]
+}

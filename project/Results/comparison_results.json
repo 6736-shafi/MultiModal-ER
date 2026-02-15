@@ -1,0 +1,264 @@
+{
+  "Speech (BiLSTM)": {
+    "model": "Speech (BiLSTM)",
+    "accuracy": 1.0,
+    "per_class_metrics": {
+      "Angry": {
+        "accuracy": 1.0,
+        "support": 120
+      },
+      "Disgust": {
+        "accuracy": 1.0,
+        "support": 120
+      },
+      "Fear": {
+        "accuracy": 1.0,
+        "support": 120
+      },
+      "Happy": {
+        "accuracy": 1.0,
+        "support": 120
+      },
+      "Neutral": {
+        "accuracy": 1.0,
+        "support": 120
+      },
+      "Pleasant Surprise": {
+        "accuracy": 1.0,
+        "support": 120
+      },
+      "Sad": {
+        "accuracy": 1.0,
+        "support": 120
+      }
+    },
+    "error_analysis": [],
+    "low_confidence_correct": [
+      {
+        "identifier": "../../TESS Toronto emotional speech set data/TESS Toronto emotional speech set data/OAF_Pleasant_surprise/OAF_mode_ps.wav",
+        "true_emotion": "Pleasant Surprise",
+        "confidence": 0.9991902709007263,
+        "runner_up": "Happy",
+        "runner_up_confidence": 0.0006936167483218014
+      },
+      {
+        "identifier": "../../TESS Toronto emotional speech set data/TESS Toronto emotional speech set data/TESS Toronto emotional speech set data/OAF_angry/OAF_moon_angry.wav",
+        "true_emotion": "Angry",
+        "confidence": 0.999259889125824,
+        "runner_up": "Fear",
+        "runner_up_confidence": 0.0005991506041027606
+      },
+      {
+        "identifier": "../../TESS Toronto emotional speech set data/TESS Toronto emotional speech set data/OAF_angry/OAF_week_angry.wav",
+        "true_emotion": "Angry",
+        "confidence": 0.9993941783905029,
+        "runner_up": "Fear",
+        "runner_up_confidence": 0.0005406232085078955
+      },
+      {
+        "identifier": "../../TESS Toronto emotional speech set data/TESS Toronto emotional speech set data/TESS Toronto emotional speech set data/OAF_Pleasant_surprise/OAF_bath_ps.wav",
+        "true_emotion": "Pleasant Surprise",
+        "confidence": 0.9996688365936279,
+        "runner_up": "Fear",
+        "runner_up_confidence": 0.0002349529677303508
+      },
+      {
+        "identifier": "../../TESS Toronto emotional speech set data/TESS Toronto emotional speech set data/TESS Toronto emotional speech set data/YAF_angry/YAF_when_angry.wav",
+        "true_emotion": "Angry",
+        "confidence": 0.9997314810752869,
+        "runner_up": "Disgust",
+        "runner_up_confidence": 0.00022649244056083262
+      }
+    ]
+  },
+  "Text (BiLSTM)": {
+    "model": "Text (BiLSTM)",
+    "accuracy": 0.15,
+    "per_class_metrics": {
+      "Angry": {
+        "accuracy": 0.0,
+        "support": 120
+      },
+      "Disgust": {
+        "accuracy": 0.0,
+        "support": 120
+      },
+      "Fear": {
+        "accuracy": 0.0,
+        "support": 120
+      },
+      "Happy": {
+        "accuracy": 0.05,
+        "support": 120
+      },
+      "Neutral": {
+        "accuracy": 0.0,
+        "support": 120
+      },
+      "Pleasant Surprise": {
+        "accuracy": 1.0,
+        "support": 120
+      },
+      "Sad": {
+        "accuracy": 0.0,
+        "support": 120
+      }
+    },
+    "error_analysis": [
+      {
+        "text": "Stay the word road!",
+        "true_emotion": "Fear",
+        "predicted_emotion": "Happy",
+        "confidence": 0.14631837606430054
+      },
+      {
+        "text": "Say the words shout.",
+        "true_emotion": "Neutral",
+        "predicted_emotion": "Happy",
+        "confidence": 0.14373421669006348
+      },
+      {
+        "text": "Say the words shout.",
+        "true_emotion": "Angry",
+        "predicted_emotion": "Happy",
+        "confidence": 0.14373421669006348
+      },
+      {
+        "text": "Say the words, Saur.",
+        "true_emotion": "Neutral",
+        "predicted_emotion": "Happy",
+        "confidence": 0.14372371137142181
+      },
+      {
+        "text": "Say the words sub.",
+        "true_emotion": "Angry",
+        "predicted_emotion": "Pleasant Surprise",
+        "confidence": 0.14356325566768646
+      }
+    ],
+    "low_confidence_correct": [
+      {
+        "identifier": "Say the word get!",
+        "true_emotion": "Pleasant Surprise",
+        "confidence": 0.1434561312198639,
+        "runner_up": "Angry",
+        "runner_up_confidence": 0.14313620328903198
+      },
+      {
+        "identifier": "Say the word mouse!",
+        "true_emotion": "Pleasant Surprise",
+        "confidence": 0.14346107840538025,
+        "runner_up": "Angry",
+        "runner_up_confidence": 0.14312885701656342
+      },
+      {
+        "identifier": "Say the word mouse!",
+        "true_emotion": "Pleasant Surprise",
+        "confidence": 0.14346107840538025,
+        "runner_up": "Angry",
+        "runner_up_confidence": 0.14312885701656342
+      },
+      {
+        "identifier": "Say the word jar.",
+        "true_emotion": "Pleasant Surprise",
+        "confidence": 0.1434611976146698,
+        "runner_up": "Angry",
+        "runner_up_confidence": 0.14312872290611267
+      },
+      {
+        "identifier": "Say the word death.",
+        "true_emotion": "Pleasant Surprise",
+        "confidence": 0.14346247911453247,
+        "runner_up": "Angry",
+        "runner_up_confidence": 0.14312683045864105
+      }
+    ]
+  },
+  "Fusion (Multimodal)": {
+    "model": "Fusion (Speech BiLSTM + Text BiLSTM)",
+    "accuracy": 0.9976190476190476,
+    "per_class_metrics": {
+      "Angry": {
+        "accuracy": 1.0,
+        "support": 120
+      },
+      "Disgust": {
+        "accuracy": 0.9833333333333333,
+        "support": 120
+      },
+      "Fear": {
+        "accuracy": 1.0,
+        "support": 120
+      },
+      "Happy": {
+        "accuracy": 1.0,
+        "support": 120
+      },
+      "Neutral": {
+        "accuracy": 1.0,
+        "support": 120
+      },
+      "Pleasant Surprise": {
+        "accuracy": 1.0,
+        "support": 120
+      },
+      "Sad": {
+        "accuracy": 1.0,
+        "support": 120
+      }
+    },
+    "error_analysis": [
+      {
+        "file": "OAF_mode_disgust.wav",
+        "text": "Say the word mode.",
+        "true_emotion": "Disgust",
+        "predicted_emotion": "Sad",
+        "confidence": 0.8547250032424927
+      },
+      {
+        "file": "OAF_mode_disgust.wav",
+        "text": "Say the word mode.",
+        "true_emotion": "Disgust",
+        "predicted_emotion": "Sad",
+        "confidence": 0.8547250032424927
+      }
+    ],
+    "low_confidence_correct": [
+      {
+        "identifier": "../../TESS Toronto emotional speech set data/TESS Toronto emotional speech set data/TESS Toronto emotional speech set data/OAF_Pleasant_surprise/OAF_bath_ps.wav",
+        "true_emotion": "Pleasant Surprise",
+        "confidence": 0.9968851208686829,
+        "runner_up": "Happy",
+        "runner_up_confidence": 0.002948498586192727
+      },
+      {
+        "identifier": "../../TESS Toronto emotional speech set data/TESS Toronto emotional speech set data/YAF_disgust/YAF_love_disgust.wav",
+        "true_emotion": "Disgust",
+        "confidence": 0.9979939460754395,
+        "runner_up": "Pleasant Surprise",
+        "runner_up_confidence": 0.0018409175099804997
+      },
+      {
+        "identifier": "../../TESS Toronto emotional speech set data/TESS Toronto emotional speech set data/TESS Toronto emotional speech set data/YAF_neutral/YAF_lean_neutral.wav",
+        "true_emotion": "Neutral",
+        "confidence": 0.9984850287437439,
+        "runner_up": "Sad",
+        "runner_up_confidence": 0.0014245299389585853
+      },
+      {
+        "identifier": "../../TESS Toronto emotional speech set data/TESS Toronto emotional speech set data/YAF_neutral/YAF_lean_neutral.wav",
+        "true_emotion": "Neutral",
+        "confidence": 0.9984850287437439,
+        "runner_up": "Sad",
+        "runner_up_confidence": 0.0014245299389585853
+      },
+      {
+        "identifier": "../../TESS Toronto emotional speech set data/TESS Toronto emotional speech set data/OAF_happy/OAF_chain_happy.wav",
+        "true_emotion": "Happy",
+        "confidence": 0.9990299940109253,
+        "runner_up": "Pleasant Surprise",
+        "runner_up_confidence": 0.000908848422113806
+      }
+    ]
+  }
+}

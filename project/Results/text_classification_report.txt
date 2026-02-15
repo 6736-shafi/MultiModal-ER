@@ -1,0 +1,18 @@
+Text Emotion Recognition - Classification Report
+============================================================
+
+Overall Accuracy: 0.1500
+
+                   precision    recall  f1-score   support
+
+            Angry       0.00      0.00      0.00       120
+          Disgust       0.00      0.00      0.00       120
+             Fear       0.00      0.00      0.00       120
+            Happy       0.60      0.05      0.09       120
+          Neutral       0.00      0.00      0.00       120
+Pleasant Surprise       0.14      1.00      0.25       120
+              Sad       0.00      0.00      0.00       120
+
+         accuracy                           0.15       840
+        macro avg       0.11      0.15      0.05       840
+     weighted avg       0.11      0.15      0.05       840

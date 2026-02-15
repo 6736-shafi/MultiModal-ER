@@ -1,0 +1,72 @@
+{
+  "model": "Speech (BiLSTM)",
+  "accuracy": 1.0,
+  "per_class_metrics": {
+    "Angry": {
+      "accuracy": 1.0,
+      "support": 120
+    },
+    "Disgust": {
+      "accuracy": 1.0,
+      "support": 120
+    },
+    "Fear": {
+      "accuracy": 1.0,
+      "support": 120
+    },
+    "Happy": {
+      "accuracy": 1.0,
+      "support": 120
+    },
+    "Neutral": {
+      "accuracy": 1.0,
+      "support": 120
+    },
+    "Pleasant Surprise": {
+      "accuracy": 1.0,
+      "support": 120
+    },
+    "Sad": {
+      "accuracy": 1.0,
+      "support": 120
+    }
+  },
+  "error_analysis": [],
+  "low_confidence_correct": [
+    {
+      "identifier": "../../TESS Toronto emotional speech set data/TESS Toronto emotional speech set data/OAF_Pleasant_surprise/OAF_mode_ps.wav",
+      "true_emotion": "Pleasant Surprise",
+      "confidence": 0.9991902709007263,
+      "runner_up": "Happy",
+      "runner_up_confidence": 0.0006936167483218014
+    },
+    {
+      "identifier": "../../TESS Toronto emotional speech set data/TESS Toronto emotional speech set data/TESS Toronto emotional speech set data/OAF_angry/OAF_moon_angry.wav",
+      "true_emotion": "Angry",
+      "confidence": 0.999259889125824,
+      "runner_up": "Fear",
+      "runner_up_confidence": 0.0005991506041027606
+    },
+    {
+      "identifier": "../../TESS Toronto emotional speech set data/TESS Toronto emotional speech set data/OAF_angry/OAF_week_angry.wav",
+      "true_emotion": "Angry",
+      "confidence": 0.9993941783905029,
+      "runner_up": "Fear",
+      "runner_up_confidence": 0.0005406232085078955
+    },
+    {
+      "identifier": "../../TESS Toronto emotional speech set data/TESS Toronto emotional speech set data/TESS Toronto emotional speech set data/OAF_Pleasant_surprise/OAF_bath_ps.wav",
+      "true_emotion": "Pleasant Surprise",
+      "confidence": 0.9996688365936279,
+      "runner_up": "Fear",
+      "runner_up_confidence": 0.0002349529677303508
+    },
+    {
+      "identifier": "../../TESS Toronto emotional speech set data/TESS Toronto emotional speech set data/TESS Toronto emotional speech set data/YAF_angry/YAF_when_angry.wav",
+      "true_emotion": "Angry",
+      "confidence": 0.9997314810752869,
+      "runner_up": "Disgust",
+      "runner_up_confidence": 0.00022649244056083262
+    }
+  ]
+}
